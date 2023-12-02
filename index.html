@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumo Módulo 1 - HTML DIO</title>
+</head>
+<p>
+    <h1>Resumo: Conteúdos HTML vistos no módulo 1 do curso da DIO</h1>
+    <br>
+    <hr>
+    <h2>Índice</h2>
+    <ul>
+        <li><strong>A História da Web</strong>
+            <ul>
+                <li><a href="#computadores">Primeiros Computadores</a></li>
+                <li><a href="#surgimento">Como Surgiu a Web?</a></li>
+                <li><a href="#nomes">Grandes Nomes</a>
+                    <ul>
+                        <li><a href="#grace">Grace Murray Hopper</a></li>
+                        <li><a href="#joseph">Joseph Carl Robnett Licklider</a></li>
+                        <li><a href="#robert">Robert E. Kahn e Gray Cerf</a></li>
+                        <li><a href="#tim">Tim Berners-Lee</a></li>
+                        <li><a href="#marc">Marc Andreessen</a></li>
+                    </ul>
+                </li>
+                
+
+            </ul>
+        </li>
+        <li><strong>O quê são clientes e senvidores?</strong>
+            <ul>
+                <li><strong>Clientes</strong>
+                    <ul>
+                        <li><a href="#client">Cliente no linguajar web</a></li>
+                        <li><a href="#navegadores">Navegadores</a></li>
+                        <li><a href="#aplicaçoes">Aplicações</a></li>
+                        <li><a href="#mobile">Dispositivos Móveis</a></li>
+                    </ul>
+                </li>
+                <li><strong>Servidores</strong>
+                    <ul>
+                        <li><a href="#servers">Sobre Servidores</a></A></li>
+                        <li><a href="#hardware-software">Hardware e Software em Servidores</a></li>
+                        <li><a href="#tipos">Tipos de Servers</a></li>
+                        <li><a href="#hospedagem">Hospedagem de Sites</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><strong>Lingagens de Programação</strong>
+            <ul>
+                <li><a href="#o-que-e">O que é?</a></li>
+                <li><a href="#server-side">Server Side</a></li>
+                <li><a href="#client-side">Client Side</a></li>
+                <li><a href="#html">HTML: linguagem de marcação</a></li>
+            </ul>
+        </li>
+        <li><strong>Introdução ao HTML</strong>
+            <ul>
+                <li><a href="#estrutura">Estrutura Básica de um arquivo HTML</a></li>
+                <li><a href="#tags">Tags, atributos e textos, listas, links</a></li>
+            </ul>
+        </li>        
+    </ul>
+    <hr>
+    <br>
+    <h2>A História da Web</h2>
+        <h3 id="computadores">Primeiros Computadores</h3>
+            <p>A história dos computadores pode ser dividida em quatro eras principais:</p>
+            <ol>
+                <li><em>Computadores Analógicos</em>
+                    <p>Os primeiros computadores eram analógicos, o que significa que eles representavam 
+                        dados e informações como quantidades contínuas. 
+                        Alguns dos primeiros computadores analógicos incluíam o <u>ábaco</u>, 
+                        inventado na China por volta de 2400 aC, a <u>máquina diferencial</u>, inventada por Charles Babbage em 1822, 
+                        e o <u>Colossus</u>, construído durante a Segunda Guerra Mundial para decifrar mensagens codificadas alemãs.
+                    </p>
+                    <blockquote cite="https://pt.wikipedia.org/wiki/Colossus_(computador)">
+                        Colossus foi um conjunto de computadores desenvolvidos por decifradores britânicos nos anos de 1943 a 1945 
+                        para ajudar na criptoanálise da cifra de Lorenz. A Colossus usava válvulas termiônicas para realizar operações 
+                        booleanas e de contagem. <sub>(Wikipedia)</sub>
+                    </blockquote>
+                </li>
+                <li><em>Computadores Digitais</em>
+                    <p>Os computadores digitais representam dados e informações como números discretos. 
+                        O primeiro computador digital foi o <abbr title="Electronic Numerical Integrator And Computer">ENIAC</abbr>, 
+                        construído na década de 1940 pelo exército dos Estados Unidos. 
+                        O <abbr title="Electronic Numerical Integrator And Computer"><u>ENIAC</u></abbr> <sup><small>*</small></sup> 
+                        era um computador enorme e caro, 
+                        que ocupava uma sala inteira e consumia muita energia.
+                        <br>
+                        Em 1944, foi construído o 
+                        <u>Harvard Mark I</u><sup><small>**</small></sup>, 
+                        o primeiro computador digital a usar cartões perfurados para entrada de dados. 
+                        O <abbr title="Harvard Mack 1">H.M. I</abbr> era menor e mais eficiente que 
+                        o <abbr title="Electronic Numerical Integrator And Computer">ENIAC</abbr>, 
+                        mas ainda era um computador grande e caro.
+                    </p>
+                </li>
+                <li><em>Computadores Mainframe</em>
+                    <p>Na década de 1950, os computadores mainframe tornaram-se mais comuns. Os mainframes eram computadores grandes 
+                        e potentes que eram usados ​​por empresas e governos. Eles eram usados ​para tarefas como processamento de dados, 
+                        armazenamento de informações e aplicações científicas.
+                    </p>
+                    <h5>Transformação causada pelos transistores<sup><small>***</small></sup></h5>
+                    <p>No início da década de 1950, os transistores começaram a substituir as válvulas eletrônicas nos computadores. 
+                        Os transistores eram menores, mais eficientes e mais confiáveis ​​do que as válvulas eletrônicas.
+                        <br>
+                        <mark>A mudança para os transistores levou a uma transformação na indústria de computadores.</mark>
+                        Os computadores tornaram-se menores, mais baratos e mais eficientes. 
+                        Isso levou à popularização dos computadores mainframe e à criação de novos tipos de computadores, 
+                        como os minicomputadores e os microcomputadores.
+                    </p>
+                </li>
+                <li><em>Computadores Pessoais</em>
+                    <p>Na década de 1970, os computadores pessoais começaram a se tornar populares. 
+                        Os computadores pessoais eram menores e mais baratos do que os mainframes 
+                        e podiam ser usados ​​por indivíduos e pequenas empresas. 
+                        <br>
+                        Os computadores pessoais continuaram a evoluir nas décadas seguintes. Eles se tornaram mais poderosos, 
+                        mais baratos e mais fáceis de usar. Hoje, os computadores pessoais são uma parte essencial da vida cotidiana. 
+                        Eles são usados ​​para tarefas como trabalho, lazer, educação e comunicação.</p>
+                </li> 
+            </ol>
+            
+            <p>
+                <small>Notas:
+                    <br>
+                    <sup><small>*</small></sup>O ENIAC foi um computador pioneiro que revolucionou o campo da computação. 
+                    Ele foi o primeiro computador digital a ser usado para aplicações práticas, 
+                    como o cálculo de trajetórias balísticas.
+                    <br>
+                    <sup><small>**</small></sup>O Harvard Mark I foi um computador importante que ajudou a desenvolver os fundamentos 
+                    da computação digital. Ele foi o primeiro computador digital a usar cartões perfurados para entrada de dados.
+                    <br>
+                    <sup><small>***</small></sup>Os transistores foram uma invenção revolucionária que permitiu a miniaturização dos computadores. 
+                    Eles foram responsáveis ​​pelo desenvolvimento dos computadores pessoais e de outros tipos de computadores modernos.
+                </small>
+            </p>
+            <hr>
+        <h3 id="surgimento">Como Surgiu a Web?</h3>
+            <p>A Web surgiu na década de 1980, como um projeto do físico e cientista da computação britânico <strong><u>Tim Berners-Lee</u></strong>, 
+                que trabalhava no <abbr title="Conseil Européen pour la Recherche Nucléaire">CERN</abbr>, 
+                a Organização Europeia para a Investigação Nuclear, na Suíça.
+                <br>
+                Berners-Lee queria criar uma maneira de compartilhar informações entre cientistas de todo o mundo. 
+                Ele desenvolveu um sistema de hipertexto, que permite aos usuários clicar em links 
+                para navegar entre diferentes páginas de informações.
+            </p>
+            <p>O sistema de hipertexto de Berners-Lee foi baseado em três tecnologias principais:
+                <ul>
+                    <li><abbr title="Protocolo de Transferência de Hipertexto">HTTP.</abbr>
+                        : define como os dados são transferidos entre servidores e clientes
+                    </li>
+                    <li><abbr title="Linguagem de Marcação de Hipertexto">HTML</abbr>
+                        : define como as páginas da Web são formatadas e exibidas.
+                    </li>
+                    <li><abbr title="Unidades de Recursos Uniformes">URI</abbr>
+                        : identificam recursos na Web, como páginas, imagens e vídeos.
+                    </li>
+                </ul>
+            </p>
+            <p>Berners-Lee lançou a primeira versão da Web em 1991. A Web rapidamente se tornou popular e, 
+                hoje, é a principal forma de acessar informações na Internet.
+            </p>
+            <p>
+                Além de Berners-Lee, outros nomes importantes envolvidos no desenvolvimento da Web incluem:
+                <ul>
+                    <li><strong>Robert Cailliau</strong>: Um cientista da computação belga que ajudou Berners-Lee a desenvolver a Web.</li>
+                    <li>
+                        <strong>Andreessen</strong>: Um estudante de pós-graduação da Universidade de Illinois que desenvolveu o Mosaic, 
+                        o primeiro navegador da Web amplamente utilizado.
+                    </li>
+                    <li><strong>Mosaic Communications Corporation</strong>: A empresa fundada por Andreessen que desenvolveu o Mosaic.</li>
+                </ul>
+            </p>
+            <p>
+                A Web teve um impacto profundo na sociedade. Ela mudou a maneira como as pessoas trabalham, se comunicam e aprendem. 
+                A Web também foi responsável pelo surgimento de novas indústrias, como a tecnologia da informação e o comércio eletrônico.
+            </p>
+            <hr>
+        <h3 id="nomes">Grandes Nomes</h3>
+            <h4 id="grace">Grace Murray Hopper</h4>
+                <p>
+                    Grace Murray Hopper (1906-1992) foi uma pioneira da computação, matemática e oficial da Marinha dos Estados Unidos. 
+                    Ela é mais conhecida por seu trabalho no desenvolvimento de linguagens de programação, 
+                    incluindo COBOL, e por popularizar a computação.
+                    <br>
+                    Hopper nasceu em Nova York em 1906. Ela se formou em matemática pelo Vassar College em 1928 e recebeu seu Ph.D. 
+                    em matemática pela Universidade de Yale em 1934.
+                    <br>
+                    Hopper lecionou matemática no Vassar College de 1931 a 1943. Durante a Segunda Guerra Mundial, 
+                    ela se juntou à Marinha dos Estados Unidos e foi designada para o Bureau of Ships.
+                </p>
+                <p>
+                    Após a guerra, Hopper foi designada para a Harvard University, onde trabalhou no Harvard Mark I, 
+                    um dos primeiros computadores digitais. Ela ajudou a desenvolver o primeiro compilador, 
+                    um programa que converte o código de computador em linguagem de máquina.
+                    <br>
+                    Em 1951, Hopper foi transferida para a Eckert-Mauchly Computer Corporation, 
+                    onde trabalhou no desenvolvimento do UNIVAC I, o primeiro computador comercial. 
+                    Ela também desenvolveu a linguagem de programação FLOW-MATIC, que foi a base para COBOL.
+                    <br>
+                    COBOL foi projetado para ser uma linguagem de programação fácil de usar para pessoas de negócios, 
+                    em vez de apenas especialistas em computação. Tornou-se a linguagem de programação dominante para 
+                    computadores mainframe e foi amplamente utilizada para aplicações de negócios por décadas.
+                </p>
+                <p>
+                    Hopper era uma defensora apaixonada da computação. Ela deu palestras freqüentemente e escreveu vários artigos 
+                    e livros sobre o assunto. <del>Ela também foi a primeira pessoa a usar o termo "bug" para se referir a um erro de computador.</del>
+                    <ins>A palavra inglesa “bug”, que se traduz literalmente como “inseto”, 
+                    já era usada como forma de descrever defeitos na área de engenharia desde a década de 1870, Hopper popularizou, 
+                    mas não inventou o termo.</ins>
+                    <br>
+                    Hopper recebeu inúmeros prêmios por seu trabalho em computação, incluindo a Medalha Nacional de Tecnologia 
+                    e a Medalha Presidencial da Liberdade. Ela foi promovida a contra-almirante em 1983 e se aposentou da Marinha 
+                    dos Estados Unidos em 1986.
+                </p>
+                <p>
+                    Grace Murray Hopper foi uma das pioneiras mais importantes da computação. 
+                    Seu trabalho ajudou a tornar os computadores mais acessíveis e levou ao desenvolvimento de novas linguagens de programação. 
+                    Ela também foi uma defensora apaixonada da computação, o que ajudou a popularizar o campo.
+                    <br>
+                    Hopper é lembrada por seu humor, inteligência e dedicação à computação. 
+                    Ela é uma inspiração para mulheres e homens na área de computação.
+                </p>
+                <p>
+                    Algumas realizações notáveis de Grace Murray Hopper:
+                    <ul>
+                        <li>Desenvolvimento da linguagem de programação FLOW-MATIC, baseada em inglês, que foi a precursora do COBOL.</li>
+                        <li>Invenção do primeiro compilador para uma linguagem de programação de alto nível.</li>
+                        <li>Popularização do termo "bug" para se referir a um erro de computador.</li>
+                        <li>
+                            Promoção a contra-almirante da Marinha dos Estados Unidos, 
+                            a mais alta patente alcançada por uma mulher na Marinha na época.
+                        </li>
+                        <li>
+                            Recebimento de inúmeros prêmios por seu trabalho em computação, 
+                            incluindo a Medalha Nacional de Tecnologia e a Medalha Presidencial da Liberdade.
+                        </li>
+                    </ul>
+                    Grace Murray Hopper continua a ser uma inspiração para mulheres e homens na área de computação. 
+                    Seu trabalho ajudou a pavimentar o caminho para as tecnologias que usamos hoje.
+                </p>
+            <h4 id="joseph">Joseph Carl Robnett Licklider</h4>
+                <p>
+                    Joseph Carl Robnett Licklider (1915-1990), conhecido como J.C.R. Licklider ou "Lick", foi um psicólogo e cientista da computação 
+                    americano que desempenhou um papel fundamental no desenvolvimento inicial da Internet.
+                </p>
+                <p>
+                    Licklider nasceu em St. Louis, Missouri, em 1915. Ele se formou em psicologia pelo Washington University em St. 
+                    Louis em 1937 e recebeu seu Ph.D. em psicologia pela Universidade de Rochester em 1942.
+                    <br>
+                    Licklider lecionou psicologia no Massachusetts Institute of Technology (MIT) de 1946 a 1950. Durante esse tempo, 
+                    ele começou a se interessar por computadores e seu potencial para revolucionar a comunicação e a inteligência artificial.
+                </p>
+                <p>
+                    Em 1950, Licklider mudou-se para Harvard, onde trabalhou no Harvard Mark I, um dos primeiros computadores digitais. 
+                    Ele também trabalhou no Projeto SAGE, um sistema de defesa aérea computadorizado.
+                    <br>
+                    Em 1962, Licklider foi nomeado diretor do Information Processing Techniques Office (IPTO) 
+                    da Advanced Research Projects Agency (ARPA). O IPTO foi responsável por financiar a pesquisa 
+                    em computação e redes de computadores, que mais tarde se tornaria a Internet.
+                    <br>
+                    Licklider foi fundamental para a criação da ARPANET, a primeira rede de computadores de área ampla. 
+                    Ele também previu o desenvolvimento de uma "rede galáctica" que permitiria a comunicação instantânea 
+                    entre pessoas em todo o mundo.
+                </p>
+                <p>
+                    Licklider escreveu vários artigos e livros sobre computação, incluindo "Man-Computer Symbiosis" (1960), 
+                    que descreveu sua visão de um futuro em que humanos e computadores trabalhariam juntos como parceiros.
+                    <br>
+                    Em 1968, Licklider deixou o IPTO e voltou a lecionar no MIT. 
+                    Ele continuou a escrever e palestrar sobre computação até sua morte em 1990.
+                </p>
+                <p>
+                    J.C.R. Licklider é considerado um dos pioneiros mais visionários da informática. 
+                    Seu trabalho na ARPANET e suas previsões sobre o futuro da computação tiveram um 
+                    impacto profundo no desenvolvimento da Internet.
+                    <br>
+                    Licklider é lembrado por sua mente brilhante, seu entusiasmo pela tecnologia 
+                    e sua crença no potencial dos computadores para melhorar a vida humana.
+                </p>
+                <p>
+                    Algumas realizações notáveis de J.C.R. Licklider:
+                    <ul>
+                        <li>
+                            Diretor do Information Processing Techniques Office (IPTO) 
+                            da Advanced Research Projects Agency (ARPA)
+                        </li>
+                        <li>
+                            Papel fundamental na criação da ARPANET, 
+                            a primeira rede de computadores de área ampla
+                        </li>
+                        <li>
+                            Previsão do desenvolvimento de uma "rede galáctica" que permitiria 
+                            a comunicação instantânea entre pessoas em todo o mundo
+                        </li>
+                        <li>
+                            Autor do artigo "Man-Computer Symbiosis", que descreveu sua visão de um futuro 
+                            em que humanos e computadores trabalhariam juntos como parceiros
+                        </li>
+                        <li>
+                            Considerado um dos pioneiros mais visionários da informática
+                        </li>
+                    </ul>
+                </p>
+            <h4 id="robert">Robert E. Kahn e Gray Cerf</h4>
+                <p>Kahn nasceu em Nova York em 1938 e Cerf nasceu em Nova Jersey em 1943. 
+                    Ambos se formaram em engenharia elétrica, Kahn pela Universidade de Princeton em 1964 
+                    e Cerf pela Universidade de Stanford em 1965.
+                    <br>
+                    Após a formatura, Kahn trabalhou como engenheiro de pesquisa na General Electric e Cerf 
+                    trabalhou como pesquisador no Stanford Research Institute. Em 1969, Kahn ingressou 
+                    na Defense Advanced Research Projects Agency (ARPA), onde trabalhou sob a direção de J.C.R. Licklider.
+                </p>
+                <p>
+                    Na ARPA, Kahn e Cerf começaram a trabalhar no desenvolvimento de uma rede de computadores de área ampla 
+                    que pudesse conectar computadores em todo o mundo. Eles desenvolveram o Transmission Control Protocol (TCP), 
+                    que é um protocolo de comunicação que permite que os computadores se comuniquem uns com os outros de forma confiável.
+                    <br>
+                    O TCP foi um componente fundamental da ARPANET, a primeira rede de computadores de área ampla. 
+                    A ARPANET foi lançada em 1969 e se tornou a base para a Internet.
+                </p>
+                <p>
+                    Em 1976, Kahn fundou a Corporation for National Research Initiatives (CNRI), 
+                    uma organização sem fins lucrativos que apoia a pesquisa em tecnologias de informação e comunicação. 
+                    Ele continuou a trabalhar no desenvolvimento da Internet e de outras tecnologias de rede.
+                    <br>
+                    Cerf também continuou a trabalhar no desenvolvimento da Internet. Ele se tornou o primeiro diretor da Internet Society, 
+                    uma organização que promove o desenvolvimento e o uso da Internet.
+                </p>
+                <p>
+                    Kahn e Cerf são considerados os arquitetos principais da Internet. 
+                    Seu trabalho no desenvolvimento do TCP foi fundamental para a criação da Internet 
+                    e seu papel na transformação da sociedade.
+                    <br>
+                    Kahn e Cerf receberam inúmeros prêmios por seu trabalho, 
+                    incluindo o Prêmio Turing, o prêmio mais prestigioso em ciência da computação.
+                    Eles são considerados pioneiros da computação e suas contribuições continuam a impactar o mundo hoje.
+                </p>
+            <h4 id="tim">Tim Berners-Lee</h4>
+                <p>
+                    Tim Berners-Lee é um físico e cientista da computação britânico que é amplamente considerado o inventor da World Wide Web. 
+                    Ele é um dos cientistas mais respeitados do mundo e suas contribuições para a Internet foram fundamentais para 
+                    a transformação da sociedade.
+                    <br>
+                    Berners-Lee nasceu em Londres, Inglaterra, em 1955. Ele se formou em física pelo Queen's College, Oxford, em 1976. 
+                    Após a formatura, ele trabalhou como programador no CERN, a Organização Europeia para a Investigação Nuclear, na Suíça.
+                    <br>
+                    Em 1989, Berners-Lee propôs a criação da World Wide Web. 
+                    Ele imaginou uma rede de computadores que permitiria às pessoas compartilhar informações de forma fácil e rápida.
+                </p>    
+                <p>
+                    Berners-Lee desenvolveu o protocolo HTTP, que define como os dados são transferidos entre servidores e clientes. 
+                    Ele também desenvolveu a linguagem de marcação HTML, que define como as páginas da Web são formatadas e exibidas.
+                    <br>
+                    A primeira versão da Web foi lançada em 1991. A Web rapidamente se tornou popular e, hoje, 
+                    é a principal forma de acessar informações na Internet.
+                    <br>
+                    Berners-Lee continuou a trabalhar no desenvolvimento da Web. Ele fundou o World Wide Web Consortium (W3C), 
+                    uma organização que desenvolve padrões para a Web. Ele também fundou a World Wide Web Foundation, 
+                    uma organização sem fins lucrativos que promove o uso da Web para o bem.
+                </p>
+                <p>
+                    Berners-Lee recebeu inúmeros prêmios por seu trabalho, incluindo o Prêmio Turing, 
+                    o prêmio mais prestigioso em ciência da computação. Ele foi nomeado cavaleiro pela Rainha Elizabeth II em 2004.
+                    <br>
+                    Algumas realizações notáveis de Tim Berners-Lee:
+                    <ul>
+                        <li>Criação da World Wide Web</li>
+                        <li>Desenvolvimento do protocolo HTTP</li>
+                        <li>Desenvolvimento da linguagem de marcação HTML</li>
+                        <li>Fundação do World Wide Web Consortium (W3C)</li>
+                        <li>Fundação da World Wide Web Foundation</li>
+                    </ul>
+                </p>
+                <p>
+                    Tim Berners-Lee é considerado o inventor da World Wide Web. Sua criação da Web teve um impacto profundo na sociedade, 
+                    revolucionando a forma como as pessoas trabalham, se comunicam e aprendem.
+                </p>
+            <h4 id="marc">Marc Andreessen</h4>
+                <p>Marc Andreessen é um empresário e investidor americano que é mais conhecido por ser o co-fundador 
+                    da Netscape Communications Corporation e co-autor do Mosaic, o primeiro navegador da Web amplamente utilizado.
+                    <br>
+                    Andreessen nasceu em Nova York em 1971. Ele se formou em ciência da computação pela Universidade de Illinois 
+                    em Urbana-Champaign em 1993.
+                    <br>
+                    Após a formatura, Andreessen trabalhou como pesquisador no National Center for Supercomputing Applications (NCSA), 
+                    onde ajudou a desenvolver o Mosaic. O Mosaic foi um navegador gráfico que tornou a Web mais acessível e fácil de usar.
+                </p>
+                <p>
+                    Em 1994, Andreessen e seu colega de classe da Universidade de Illinois, Jim Clark, fundaram a Netscape 
+                    Communications Corporation. A Netscape lançou o Navigator, uma versão comercial do Mosaic.
+                    <br>
+                    O Navigator rapidamente se tornou o navegador da Web mais popular do mundo. Ele ajudou a popularizar a Web e a levar 
+                    a Internet a um público mais amplo.
+                    <br>
+                    Em 1995, a Netscape foi adquirida pela America Online (AOL) por US$ 4,2 bilhões. 
+                    Andreessen deixou a Netscape em 1997.
+                    <br>
+                    Andreessen continuou sua carreira como empresário e investidor. 
+                    Ele fundou ou co-fundou várias empresas de tecnologia, incluindo a Loudcloud, a Opsware, a Ning e a Andreessen Horowitz.
+                    <br>
+                    Andreessen é um dos empresários mais bem-sucedidos da história da tecnologia. 
+                    Ele é considerado um dos pioneiros da Web e seu trabalho ajudou a transformar a forma como as pessoas acessam e usam a Internet.
+                </p>
+                <p>
+                    Contribuições de Marc Andreessen para os navegadores:
+                    <ul>
+                        <li>Co-autor do Mosaic, o primeiro navegador da Web amplamente utilizado.</li>
+                        <li>Co-fundador da Netscape Communications Corporation, que lançou o Navigator, uma versão comercial do Mosaic.</li>
+                        <li>O Navigator ajudou a popularizar a Web e a levar a Internet a um público mais amplo.</li>
+                    </ul>
+                </p>
+            <hr>
+    <h2>O quê são clientes e servidores?</h2>
+        <h3 id="client">O que é um Client</h3>
+            <p>
+                Quando falamos de web, um cliente é um dispositivo ou software que solicita e recebe recursos de um servidor. 
+                No contexto da Web, os clientes são geralmente computadores pessoais, laptops, tablets ou smartphones.
+            </p>
+            <p>    
+                Os clientes da Web podem ser divididos em dois tipos principais:
+                <ul>
+                    <li>
+                        Navegadores da Web: Os navegadores da Web são os clientes mais comuns da Web. 
+                        Eles são usados para visualizar páginas da Web e interagir com sites. 
+                        Os navegadores da Web mais populares incluem o Chrome, o Firefox, o Edge e o Safari.
+                    </li>
+                    <li>
+                        Aplicativos da Web: Os aplicativos da Web são aplicativos que são executados na Web. 
+                        Eles podem ser usados para realizar uma variedade de tarefas, como enviar e-mail, 
+                        gerenciar arquivos e trabalhar em documentos. Alguns exemplos de aplicativos da Web incluem 
+                        Gmail, Google Docs e Facebook.        
+                    </li>
+                </ul>
+            </p>
+            <p>
+                Os clientes da Web enviam solicitações ao servidor usando o protocolo HTTP. 
+                O servidor então responde à solicitação enviando os recursos solicitados. 
+                Os recursos podem ser páginas da Web, arquivos de imagem, arquivos de vídeo ou outros tipos de dados.
+                <br>
+                Os clientes da Web são essenciais para o funcionamento da Web. 
+                Eles permitem que os usuários acessem e interajam com sites e aplicativos da Web.
+            </p>
+            <p>
+                Aqui estão alguns exemplos de como os clientes da Web são usados:
+                <ul>
+                    <li>Um usuário usa um navegador da Web para visitar um site de notícias.</li>
+                    <li>Um usuário usa um aplicativo da Web para enviar um e-mail.</li>
+                    <li>Um usuário usa um aplicativo da Web para fazer uma compra online.</li>
+                </ul>
+                Os clientes da Web estão em constante evolução. Novos clientes são lançados regularmente 
+                e os clientes existentes são atualizados com novos recursos.
+            </p>
+            <hr>
+        <h3 id="navegadores">Navegadores</h3>
+            <p>
+                Um navegador é um aplicativo de software que permite aos usuários visualizar e interagir com páginas da web. 
+                Os navegadores são essenciais para o funcionamento da web, pois permitem que os usuários acessem e usem 
+                informações e serviços de todo o mundo.
+                <br>
+                Os navegadores funcionam enviando solicitações a servidores web. Os servidores web são computadores que 
+                armazenam páginas da web. Quando um usuário abre uma página da web em um navegador, 
+                o navegador envia uma solicitação ao servidor web, solicitando a página. 
+                O servidor web então envia a página para o navegador, 
+                que a exibe na tela do usuário.
+            </p>
+            <p>
+                Os navegadores podem ser usados para realizar uma variedade de tarefas, incluindo:
+                <ul>
+                    <li>Visitar sites</li>
+                    <li>Ler notícias</li>
+                    <li>Enviar e-mail</li>
+                    <li>Assistir a vídeos</li>
+                    <li>Ouvir música</li>
+                    <li>Comprar produtos</li>
+                    <li>Fazer pesquisas</li>
+                </ul>
+            </p>
+            <p>
+                Os navegadores também podem ser usados para acessar aplicativos da web, que são aplicativos 
+                que são executados na web. Alguns exemplos de aplicativos da web incluem:
+                <ul>
+                    <li>Gmail</li>
+                    <li>Google Docs</li>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>YouTube</li>
+                </ul> 
+            </p>
+            <p>
+                Os navegadores estão em constante evolução. Novos recursos são adicionados aos navegadores regularmente, 
+                tornando-os mais poderosos e fáceis de usar.
+                <br>
+                Aqui estão alguns dos recursos mais comuns dos navegadores:
+                <ul>
+                    <li>
+                        Suporte a HTML, CSS e JavaScript: 
+                        Esses são os principais idiomas de programação usados para criar páginas da web.
+                    </li>
+                    <li>
+                        Suporte a plugins: Os plugins são extensões 
+                        que adicionam novos recursos aos navegadores.
+                    </li>
+                    <li>
+                        Suporte a segurança: Os navegadores incluem recursos de segurança 
+                        para proteger os usuários de malware e outras ameaças online.
+                    </li>
+                    <li>
+                        Suporte a privacidade: Os navegadores incluem recursos de privacidade 
+                        para ajudar os usuários a controlar suas informações pessoais.
+                    </li>
+                </ul>
+            </p>
+            <hr>
+        <h3 id="aplicaçoes"Aplicações>Aplicações</h3>
+            <p>
+                Aplicações web são programas de computador que são executados na web. 
+                Eles são criados usando uma variedade de tecnologias, 
+                incluindo HTML, CSS, JavaScript e frameworks de desenvolvimento web.
+                <br>
+                Aplicações web são uma forma conveniente e acessível de fornecer software para usuários. 
+                Elas podem ser acessadas de qualquer dispositivo com uma conexão à Internet, o que as torna ideais para empresas 
+                e organizações que desejam atingir um público global.
+                <br>
+                As aplicações web funcionam enviando solicitações a servidores web. 
+                Os servidores web são computadores que armazenam e executam aplicativos web. 
+                Quando um usuário abre uma aplicação web em um navegador, o navegador envia uma solicitação ao servidor web, 
+                solicitando o aplicativo. O servidor web então envia o aplicativo para o navegador, que o executa na máquina do usuário.
+            </p>
+            <p>
+                Aplicações web podem ser divididas em dois tipos principais:
+                <ul>
+                    <li>
+                        Aplicações web estáticas: Aplicações web estáticas são aquelas que não são atualizadas em tempo real. 
+                        Elas são criadas usando HTML, CSS e JavaScript, e são armazenadas em servidores web.
+                    </li>
+                    <li>
+                        Aplicações web dinâmicas: Aplicações web dinâmicas são aquelas que são atualizadas em tempo real. 
+                        Elas são criadas usando frameworks de desenvolvimento web, como o Ruby on Rails ou o Django, 
+                        e podem interagir com bancos de dados e outros serviços.
+                    </li>
+                </ul>
+            </p>
+            <p>
+                Aqui estão alguns exemplos de aplicações web:
+                <ul>
+                    <li>Sites de comércio eletrônico</li>
+                    <li>Redes sociais</li>
+                    <li>Serviços de e-mail</li>
+                    <li>Aplicativos de produtividade</li>
+                    <li>Jogos</li>
+                </ul>
+            </p>
+            <p>
+                Aplicações web estão se tornando cada vez mais populares. 
+                Elas oferecem uma variedade de benefícios, incluindo:
+                <br>
+                <ul>
+                    <li>Acessibilidade: Aplicações web podem ser acessadas de qualquer dispositivo com uma conexão à Internet.</li>
+                    <li>Atualização: Aplicações web podem ser atualizadas facilmente, sem que os usuários precisem baixar um novo software.</li>
+                    <li>Escalabilidade: Aplicações web podem ser facilmente escaladas para atender a um número crescente de usuários.</li>
+                </ul>
+            </p>
+            <hr>
+        <h3 id="mobile">Dispositivos Móveis</h3>
+            <p>
+                Dispositivos móveis são dispositivos eletrônicos portáteis que podem acessar a Internet. 
+                Eles incluem smartphones, tablets, e-readers, laptops e outros dispositivos.
+                <br>
+                Os dispositivos móveis estão cada vez mais populares, 
+                e estão transformando a forma como as pessoas acessam e usam a web.
+            </p>
+            <p> 
+                A Comscore e IMS divulgaram uma pesquisa que revela:
+                <ul>
+                    <li>9 em cada 10 latino-americanos tem acesso a dispositivo móvel regularmente e 99% fizeram download de aplicativos.</li>
+                    <li>22% do usuários de smartphone passam 20h/semana ou mais na internet.</li>
+                    <li>60% dos usuários de aplicativos como Waze, Linkedin, Spotify e Waze os consideram essenciais.</li>
+                </ul>
+            </p>
+            <hr>
+        <h3 id="servers">O que é um server?</h3>
+            <p>
+                Em informática, um servidor é um computador ou programa de computador que fornece serviços a outros computadores, 
+                chamados de clientes. Os servidores podem fornecer uma variedade de serviços, incluindo:
+                <ul>
+                    <li>Armazenamento: Os servidores podem armazenar dados, como arquivos, bancos de dados e aplicações.</li>
+                    <li>Processamento: Os servidores podem processar dados, como executar aplicações e gerar conteúdo.</li>
+                    <li>Comunicação: Os servidores podem se comunicar com outros computadores, como enviar e receber e-mail e arquivos.</li>
+                </ul>
+                Os servidores são uma parte essencial da infraestrutura de TI moderna. Eles são usados para hospedar sites, fornecer serviços de e-mail, armazenar arquivos e muito mais.
+            </p>
+            <p>
+                Os servidores podem ser implantados em uma variedade de locais, incluindo:
+                <ul>
+                    <li>Data centers: Os data centers são instalações dedicadas à hospedagem de servidores.</li>
+                    <li>Nuvem: A nuvem é uma rede de servidores remotos que podem ser acessados por qualquer dispositivo com uma conexão à Internet.</li>
+                    <li>Local: Os servidores também podem ser implantados localmente, em uma empresa ou organização.</li>
+                </ul>
+            </p>
+            <p>
+                Existem muitos tipos diferentes de servidores, cada um projetado para um propósito específico. Alguns exemplos de tipos de servidores incluem:
+                <ul>
+                    <li>Servidores web: Os servidores web são usados para hospedar sites.</li>
+                    <li>Servidores de e-mail: Os servidores de e-mail são usados para fornecer serviços de e-mail.</li>
+                    <li>Servidores de arquivos: Os servidores de arquivos são usados para armazenar arquivos.</li>
+                    <li>Servidores de banco de dados: Os servidores de banco de dados são usados para armazenar e gerenciar dados.</li>
+                    <li>Servidores de jogos: Os servidores de jogos são usados para hospedar jogos online.</li>
+                </ul>
+            </p>
+            <hr>
+        <h3 id="hardware-software">Hardware e Software em Servidores</h3>
+            <p>
+                O hardware de um servidor é composto por componentes físicos, como:
+                <ul>
+                    <li>Processador: O processador é o cérebro do servidor. Ele é responsável por executar as instruções de software e processar os dados.</li>
+                    <li>Memória: A memória é usada para armazenar dados temporariamente. Ela é essencial para o desempenho do servidor.</li>
+                    <li>Armazenamento: O armazenamento é usado para armazenar dados de forma permanente. Ele pode ser fornecido por discos rígidos, unidades de estado sólido ou outros dispositivos.</li>
+                    <li>Rede: A rede permite que o servidor se comunique com outros computadores. Ela é essencial para o funcionamento do servidor.</li>
+                    <li>Entradas e saídas (I/O): As entradas e saídas permitem que o servidor se conecte a dispositivos externos, como impressoras, scanners e câmeras.</li>
+                </ul>
+            </p>
+            <p>
+                O software de um servidor é composto por programas de computador, como:
+                <ul>
+                    <li>
+                        Sistema operacional: O sistema operacional é o software básico que controla o servidor. 
+                        Ele é responsável por gerenciar os recursos do servidor, como o processador, 
+                        a memória e o armazenamento.
+                        <br>
+                        Windows Server ou Linux(unix based): Ubuntu, CentOS, Fedora, Debian, Oracle linux, etc.
+                    </li>
+                    <li>
+                        Aplicações: As aplicações são softwares que fornecem serviços aos clientes, sendo instaladas no sistema operacional.
+                        Elas podem ser aplicações web, aplicações de e-mail, aplicações de banco de dados ou outros tipos de aplicações.
+                        <br>
+                        Exemplo: Nginx ou apache no processamento web. Interpretando o html, css, JavaScript, etc.
+                    </li>
+                </ul>
+            </p>
+            <p>
+                O hardware e o software de um servidor são projetados para funcionar juntos para fornecer serviços aos clientes. 
+                O hardware fornece a base física para o servidor, enquanto o software fornece as funcionalidades necessárias para 
+                executar as tarefas.
+                <br>            
+                Aqui estão alguns exemplos de como o hardware e o software de um servidor podem ser usados para fornecer serviços:
+                <ul>
+                    <li>Um servidor web usa hardware para armazenar páginas da web e software para processar solicitações de clientes e gerar páginas da web.</li>
+                    <li>Um servidor de e-mail usa hardware para armazenar mensagens de e-mail e software para enviar e receber mensagens de e-mail.</li>
+                    <li>Um servidor de banco de dados usa hardware para armazenar dados e software para gerenciar os dados.</li>
+                </ul>
+                Os requisitos de hardware e software de um servidor variam de acordo com o tipo de serviço que o servidor fornecerá. 
+                Por exemplo, um servidor web que hospeda um site de comércio eletrônico exigirá mais hardware e software do que 
+                um servidor web que hospeda um site simples.
+            </p>
+            <hr>
+        <h3 id="tipos">Tipos de Servers</h3>
+            <h4>Servidores Proxy:</h4>
+            <p>
+                São servidores intermediários que atuam como um ponto de entrada para a Internet.
+                <br>
+                Recebem solicitações de clientes e fazem solicitações aos servidores de destino em nome dos clientes.
+                <br>
+                Podem ser usados para aumentar a segurança, o desempenho e a privacidade na Internet.
+            </p>
+            <p>Os servidores proxy podem ser usados para uma variedade de propósitos, incluindo:</p>
+            <ul>
+                <li>
+                    Aumentar a segurança: Os servidores proxy podem ser usados para filtrar o tráfego da Internet e bloquear sites ou aplicativos indesejados;
+                </li>
+                <li>
+                    Aumentar o desempenho: Os servidores proxy podem ser usados para armazenar em cache páginas da web e outros recursos da Internet, 
+                o que pode acelerar o tempo de carregamento;
+                </li>
+                <li>
+                    Aumentar a privacidade: Os servidores proxy podem ser usados para ocultar o endereço IP do cliente, 
+                o que pode ajudar a proteger a privacidade do usuário.
+                </li>
+                <li>
+                    Uma empresa pode usar um servidor proxy para filtrar o tráfego da Internet e bloquear sites de mídia social para seus funcionários.
+                </li>
+                <li>
+                    Um provedor de serviços de Internet (ISP) pode usar um servidor proxy para armazenar em cache páginas da web populares, 
+                    o que pode acelerar o tempo de carregamento para seus clientes.
+                </li>
+                <li>
+                    Um usuário individual pode usar um servidor proxy para ocultar seu endereço IP e proteger sua privacidade ao navegar na Internet.
+                </li>    
+            </ul>
+            <h4>Outros tipos de servers:</h4>
+            <p>
+                <ul>
+                    <li>
+                        Servidores web: Os servidores web são usados para hospedar sites. 
+                        Eles armazenam páginas da web e processam solicitações de clientes para gerar páginas da web.    
+                    </li>
+                    <li>
+                        Servidores de e-mail: Os servidores de e-mail são usados para fornecer serviços de e-mail. 
+                        Eles armazenam mensagens de e-mail e processam solicitações de clientes para enviar e receber mensagens de e-mail.
+                    </li>
+                    <li>
+                        Servidores de arquivos: Os servidores de arquivos são usados para armazenar arquivos. 
+                        Eles fornecem acesso a arquivos para clientes, como usuários de uma rede local ou usuários da Internet.
+                    </li>
+                    <li>Servidores de banco de dados: Os servidores de banco de dados são usados para armazenar e gerenciar dados. 
+                        Eles fornecem acesso a dados para clientes, como aplicativos de negócios ou sites.
+                    </li>
+                    <li>Servidores de jogos: Os servidores de jogos são usados para hospedar jogos online. 
+                        Eles fornecem a infraestrutura necessária para que os jogadores se comuniquem e joguem uns contra os outros.
+                    </li>
+                    <li>Servidores de impressão: Os servidores de impressão são usados para gerenciar impressoras. 
+                        Eles permitem que os usuários imprimam documentos de qualquer computador na rede.
+                    <li>Servidores de fax: Os servidores de fax são usados para enviar e receber faxes.</li>
+                    <li>Servidores de voz sobre IP (VoIP): Os servidores de VoIP são usados para fornecer serviços de voz sobre IP. 
+                        Eles permitem que os usuários façam e recebam chamadas telefônicas pela Internet.
+                    </li>
+                    <li>Servidores de aplicações: Os servidores de aplicações são usados para executar aplicações. 
+                        Eles podem ser usados para hospedar aplicações web, aplicações de negócios ou outros tipos de aplicações.
+                    </li>
+                </ul>
+            </p>
+            <hr>
+        <h3 id="hospedagem">Hospedagem de Sites</h3>
+            <p>
+                A hospedagem de sites é um serviço que permite que você coloque seu site na Internet para que as pessoas possam acessá-lo. Quando você contrata um serviço de hospedagem de sites, você está basicamente alugando espaço em um servidor para armazenar os arquivos do seu site.
+                <br>
+                Os principais tipos de hospedagem de sites são:
+                <ul>
+                    <li>Hospedagem compartilhada: Você compartilha um servidor com outros sites. 
+                        É a opção mais barata, mas também oferece menos recursos e flexibilidade.
+                    </li>
+                    <li>
+                        Hospedagem VPS: Você tem recursos virtuais dedicados. Você tem seu próprio espaço em disco, 
+                        memória e largura de banda, mas compartilha os recursos do servidor com outros sites.
+                    </li>
+                    <li>
+                        Hospedagem dedicada: Você tem um servidor dedicado para o seu site. 
+                        Você não precisa compartilhar o servidor com outros sites e tem controle total sobre os recursos do servidor.
+                    </li>
+                </ul>
+                Ao escolher um serviço de hospedagem de sites, é importante considerar os seguintes fatores:
+                <ul>
+                    <li>
+                        O tipo de site que você precisa hospedar: 
+                        Se você está hospedando um site simples, 
+                        você pode se safar com um serviço de hospedagem de sites básico. 
+                        Se você está hospedando um site mais complexo, 
+                        você precisará de um serviço de hospedagem de sites com recursos mais avançados. 
+                    </li>
+                    <li>
+                        O tamanho do seu site: O tamanho do seu site afetará a quantidade de espaço em disco 
+                        e largura de banda que você precisará.
+                    </li>
+                    <li>
+                        O tráfego do seu site: O tráfego do seu site afetará 
+                        a quantidade de recursos que você precisará.
+                    </li>
+                    <li>
+                        O seu orçamento: Os serviços de hospedagem de sites 
+                        variam em termos de preços.
+                    </li>
+                </ul>                
+            </p>
+        <hr>
+    <h2>Lingagem de Programação</h2>
+        <h3 id="o-que-e">O que é?</h3>
+        <p>
+            Linguagem de programação é um conjunto de regras e símbolos que permitem aos humanos escrever instruções 
+            que o computador pode entender e seguir. Elas são usadas para criar software de todos os tipos, 
+            desde aplicativos até jogos.
+            <br>
+            As linguagens de programação podem ser divididas em duas categorias principais: 
+            linguagens de alto nível e linguagens de baixo nível. As linguagens de alto nível são mais próximas da linguagem humana, 
+            enquanto as linguagens de baixo nível são mais próximas do código que o computador entende diretamente.
+            <br>
+            As linguagens de alto nível são mais fáceis de aprender e usar, mas são menos eficientes que as linguagens de baixo nível. 
+            As linguagens de baixo nível são mais difíceis de aprender e usar, mas são mais eficientes.
+        </p>    
+        <p>
+            Algumas das linguagens de programação mais populares incluem:
+            <ul>
+                <li>
+                    Python: uma linguagem de alto nível versátil e fácil de aprender, 
+                    popular para desenvolvimento web, ciência de dados e aprendizado de máquina.
+                </li>
+                <li>
+                    Java: uma linguagem de alto nível orientada a objetos, 
+                    popular para desenvolvimento de aplicativos móveis, desktop e web.
+                </li>
+                <li>
+                    C++: uma linguagem de alto nível e de baixo nível, popular para desenvolvimento de jogos, 
+                    sistemas operacionais e aplicativos de alto desempenho.
+                </li>
+                <li>JavaScript: uma linguagem de alto nível interpretada, popular para desenvolvimento web e aplicativos móveis.</li>
+            </ul>
+        </p>
+        <hr>
+        <h3 id="server-side">Server Side</h3>
+            <p>
+                Server-side, ou literalmente "lado do servidor", também conhecido por back-end, é um termo usado para designar operações que, em um contexto cliente-servidor, são feitas no servidor, não no cliente.
+                <br>
+                No contexto de desenvolvimento web, o lado do servidor é responsável por lidar com as solicitações do cliente, processá-las e retornar a resposta. Isso inclui tarefas como:
+                <ul>
+                    <li>Executar consultas SQL em um banco de dados</li>
+                    <li>Gerar conteúdo dinâmico, como páginas HTML personalizadas</li>
+                    <li>Executar cálculos e operações complexas</li>
+                    <li>Armazenar dados</li>
+                </ul>
+            </p>
+            <p>
+                As linguagens de programação server-side são usadas para escrever o código que executa essas tarefas. Algumas das linguagens de programação server-side mais populares incluem:
+                <ul>
+                    <li>PHP</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>C#</li>
+                    <li>Ruby</li>
+                    <li>Node.js</li>
+                </ul>
+                Cada linguagem de programação server-side tem suas próprias vantagens e desvantagens. Por exemplo, o PHP é uma linguagem fácil de aprender e usar, mas não é tão eficiente quanto algumas das outras linguagens. O Python é uma linguagem versátil que pode ser usada para uma variedade de tarefas, mas não é tão rápido quanto algumas das outras linguagens.
+                <br>
+                A escolha da linguagem de programação server-side certa depende das necessidades específicas do aplicativo. Por exemplo, um aplicativo que precisa de alto desempenho pode exigir uma linguagem como C# ou Java. Um aplicativo que precisa ser fácil de desenvolver pode exigir uma linguagem como PHP ou Python.
+                <br>
+                Aqui estão alguns exemplos de como as linguagens de programação server-side são usadas:
+                <ul>
+                    <li>Um site de e-commerce usa uma linguagem server-side para processar pedidos, gerenciar estoque e armazenar informações de clientes.</li>
+                    <li>Um aplicativo web de banco usa uma linguagem server-side para autenticar usuários, proteger dados e executar transações.</li>
+                    <li>Um jogo online usa uma linguagem server-side para gerenciar o estado do jogo, controlar o movimento dos jogadores e lidar com as interações entre os jogadores.</li>
+                </ul>
+            </p>
+            <hr>
+        <h3 id="client-side">Client Side</h3>
+            <p>
+                Client-side, também conhecido como front-end, refere-se aos processos que são executados no dispositivo do cliente 
+                (usuário final) em uma arquitetura cliente-servidor. Isso inclui a interface do usuário (UI), 
+                as interações do usuário e o código que manipula a UI para fornecer uma experiência dinâmica e responsiva para o usuário.
+                <br>
+                As tecnologias client-side são as ferramentas e linguagens de programação que permitem aos desenvolvedores criar 
+                experiências front-end interativas e envolventes. Essas tecnologias são responsáveis por tudo o que o usuário vê 
+                e interage em um site ou aplicativo.
+                <br>
+                As tecnologias client-side comuns incluem:
+                <ul>
+                    <li>HTML (HyperText Markup Language): A base das páginas da web, definindo a estrutura e o conteúdo da página.</li>
+                    <li>CSS (Cascading Style Sheets): Controla a apresentação do conteúdo HTML, incluindo estilo, layout e cores.</li>
+                    <li>JavaScript: Uma linguagem de script que adiciona interatividade e comportamento dinâmico às páginas da web.</li>
+                    <li>Frameworks e bibliotecas JavaScript: Ferramentas que simplificam e agilizam o desenvolvimento JavaScript, como React, Vue.js e Angular.</li>
+                    <li>Renderização client-side (CSR): Uma técnica para renderizar páginas da web no client-side, proporcionando uma experiência de usuário suave e responsiva.</li>
+                </ul>
+            </p>
+            <p>
+                O desenvolvimento client-side concentra-se na criação de uma experiência de usuário perfeita, lidando com as interações do usuário, manipulando a UI e fazendo solicitações assíncronas ao servidor. Requer um profundo entendimento das tecnologias da web, princípios de experiência do usuário (UX) e a capacidade de escrever código limpo e eficiente.
+                <br>
+                Exemplos de tarefas de desenvolvimento client-side incluem:
+                <ul>
+                    <li>Criação de formulários e controles interativos</li>
+                    <li>Tratamento de entrada do usuário e eventos</li>
+                    <li>Animação e transição de elementos da UI</li>
+                    <li>Realização de solicitações AJAX para recuperar dados do servidor</li>
+                    <li>Otimização do desempenho da página para uma experiência de usuário suave</li>
+                </ul>
+            </p>
+            <hr>
+        <h3 id="html">HTML: linguagem de marcação</h3>
+            <p>
+                HTML, ou HyperText Markup Language, é uma linguagem de marcação que é usada para criar páginas da web. 
+                Ela define a estrutura e o conteúdo de uma página da web, incluindo texto, imagens, vídeos e outros elementos.
+                <br>
+                HTML não é uma linguagem de programação porque não permite que o desenvolvedor controle o comportamento da página. 
+                Ele apenas define a estrutura e o conteúdo da página. O comportamento da página é controlado por outras linguagens, 
+                como JavaScript.
+                Por exemplo, o HTML pode ser usado para criar um botão, mas não pode ser usado para definir a ação que acontece quando o botão 
+                é clicado. Isso é feito com JavaScript.
+                <br>
+                HTML é uma linguagem muito importante para o desenvolvimento web. É a base de todas as páginas da web e é essencial para criar sites e aplicativos web.
+                <br>
+                Aqui estão algumas razões pelas quais HTML não é uma linguagem de programação:
+                <ul>
+                    <li>HTML não define o comportamento da página. Ele apenas define a estrutura e o conteúdo da página.</li>
+                    <li>HTML não é uma linguagem imperativa. Ele não permite que o desenvolvedor controle o fluxo de execução do código.</li>
+                    <li>HTML não é uma linguagem procedural. Ele não permite que o desenvolvedor defina procedimentos e funções.</li>
+                </ul>
+            </p>
+            <hr>
+    <h2>Introdução ao HTML</h2>
+        <h3 id="estrutura">Estrutura Básica de um arquivo HTML</h3>
+            <p>
+                A estrutura básica de um arquivo HTML é composta por três elementos principais:
+                <ul>
+                    <li>
+                        Declaração &lt;&excl;DOCTYPE html&gt;: Esta declaração informa 
+                        ao navegador web qual versão do HTML está sendo usada. 
+                    </li>
+                    <li>Elemento &lt;html&gt;: Este elemento é o contêiner principal para o documento HTML. </li>
+                    <li>
+                        Elemento &lt;head&gt;: Este elemento contém informações sobre o documento HTML, 
+                        como o título da página, os metadados e os links de estilo e script. 
+                    </li>
+                </ul>
+                Aqui está um exemplo de um arquivo HTML básico:
+            <pre>
+                &lt;&excl;DOCTYPE&gt; html&gt;
+                &lthtml lang="en"&gt;
+                &lt;head&gt;
+                   &nbsp;&lt;title&gt;Meu primeiro documento HTML&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;h1&gt;Este é meu primeiro documento HTML&lt;/h1&gt;
+                &lt;/body>
+                &lt;/html>
+            </pre>
+                
+            
+                O elemento &lt;body&gt; é o contêiner principal para o conteúdo da página HTML. Ele pode conter texto, imagens, vídeos, formulários e outros elementos.
+                <br>
+                Os elementos HTML são usados para marcar o conteúdo da página da web. Eles são compostos por um nome de elemento e um conjunto de atributos. 
+                Os atributos fornecem informações adicionais sobre o elemento.
+                Por exemplo, o elemento &lt;h1&gt; é usado para criar um cabeçalho de nível 1. O atributo lang é usado para especificar o idioma do texto no elemento.
+                <br>
+            </p>
+            <p>Aqui está um exemplo de um elemento HTML com um atributo:</p>
+            <pre>
+                &lt;h1 lang="en"&gt;Este é o meu cabeçalho&lt;/h1&gt;
+            </pre>
+            <hr>
+        <h3 id="tags">Tags e atributos; textos, listas, links, etc..</h3>
+            <h4>Tags</h4>
+                <p>
+                    Tags HTML são elementos de marcação que são usados para estruturar e formatar o conteúdo de uma página da web.
+                    Elas são compostas por um nome de tag e um conjunto de atributos. 
+                    Os atributos fornecem informações adicionais sobre o elemento.
+                </p>
+                <h5>Elementos estruturais</h5>
+                <pre>
+                    &lt;html&gt;: Esta tag é usada para definir o início e o fim de um documento HTML.
+                    &lt;head&gt;: Esta tag é usada para armazenar informações sobre o documento HTML, como o título da página, os metadados e os links de estilo e script.</em>
+                    &lt;body&gt;: Esta tag é usada para armazenar o conteúdo da página HTML.
+                </pre>
+                <h5>Construção de texto: cabeçalhos e parágrafos</h5>
+                <pre>
+                    &lt;h1 a &lt;h6&gt;: Essas tags são usadas para criar cabeçalhos de diferentes níveis.
+                    &lt;p>: Esta tag é usada para criar um parágrafo.
+                    &lt;pre>: Esta tag é usada para criar um texto pre formatado, 
+                </pre>
+                <h5>Elementos de formatação de texto</h5>    
+                <pre>
+                    &lt;strong&gt; Esta tag é usada para enfatizar o texto.
+                    &lt;em> Esta tag é usada para enfatizar o texto incluído entre ela. O texto enfatizado geralmente é renderizado em itálico ou negrito, dependendo do navegador ou das regras de estilo.
+                    &lt;mark&gt; Esta tag é usada para destacar texto.
+                    &lt;b> Esta tag é usada para negrito o texto incluído entre ela. O texto em negrito se destaca e enfatiza sua importância.
+                    &lt;i&gt;: Esta tag é usada para itálico o texto.
+                    &lt;u&gt;: Esta tag é usada para sublinhar o texto.
+                    &lt;del>: Esta tag é usada para indicar texto excluído. O texto excluído normalmente é exibido com uma linha horizontal ou uma cor diferente para mostrar que foi removido do conteúdo original.&lt;
+                    &lt;ins>: Esta tag é usada para indicar texto inserido. O texto inserido normalmente é exibido em uma cor diferente ou com um sublinhado para mostrar que foi adicionado ao conteúdo original.
+                    &lt;small&gt;: Esta tag é usada para diminuir o tamanho da fonte do texto.
+                    &lt;sub>: Esta tag é usada para formatar texto como subscrito. O texto subscrito está posicionado ligeiramente abaixo da linha de base do texto circundante. Geralmente é usado para fórmulas matemáticas ou notações químicas.
+                    &lt;sup>: Esta tag é usada para formatar texto como superscrito. O texto superscrito está posicionado ligeiramente acima da linha de base do texto circundante. Geralmente é usado para notas de rodapé, expoentes ou símbolos de marca registrada.
+                    &lt;abbr&gt; Esta tag é usada para criar uma abreviatura.
+                </pre>
+                <h5>Elementos de lista</h5>
+                <pre>
+                    &lt;ol&gt;: Esta tag é usada para criar uma lista ordenada.
+                    &lt;ul&gt;: Esta tag é usada para criar uma lista não ordenada.
+                    &lt;li&gt;: Esta tag é usada para criar um item de lista.
+                </pre>
+                <h5>Elementos de hiperlink</h5>
+                <pre>
+                    &lt;a>: Esta tag é usada para criar um link.
+                </pre>
+                <h5>Elementos de mídia</h5>
+                <pre>
+                    &lt;img>: Esta tag é usada para inserir uma imagem.
+                    &lt;video>: Esta tag é usada para inserir um vídeo.
+                    &lt;audio>: Esta tag é usada para inserir um arquivo de áudio.
+                </pre>
+                <h5>Elementos de formulário</h5>
+                <pre>
+                    &lt;form>: Esta tag é usada para criar um formulário.
+                    &lt;input>: Esta tag é usada para criar um campo de entrada em um formulário.
+                    &lt;select>: Esta tag é usada para criar uma lista suspensa em um formulário.
+                    &lt;textarea>: Esta tag é usada para criar uma área de texto em um formulário.
+                    &lt;button>: Esta tag é usada para criar um botão em um formulário.
+                </pre>
+                <h5>Elementos de estrutura de dados</h5>
+                <pre>
+                    &lt;table>: Esta tag é usada para criar uma tabela.
+                    &lt;tr>: Esta tag é usada para criar uma linha em uma tabela.
+                    &lt;th>: Esta tag é usada para criar uma célula de cabeçalho em uma tabela.
+                    &lt;td>: Esta tag é usada para criar uma célula de conteúdo em uma tabela.
+                </pre>
+                <h5>Elementos de estrutura de fluxo</h5>
+                <pre>
+                    &lt;div>: Esta tag é usada para criar uma divisão de conteúdo.
+                    &lt;br>: Esta tag é usada para inserir uma quebra de linha.
+                    &lt;hr>: Esta tag é usada para inserir uma linha horizontal.
+                </pre>
+                <h5>Elementos de estrutura de fluxo semântico</h5>
+                <pre>
+                    &lt;header>: Esta tag é usada para definir a cabeçalho de uma página.
+                    &lt;footer>: Esta tag é usada para definir o rodapé de uma página.
+                    &lt;main>: Esta tag é usada para definir o conteúdo principal de uma página.
+                    &lt;aside>: Esta tag é usada para definir um conteúdo lateral em uma página.
+                    &lt;nav>: Esta tag é usada para definir um menu de navegação em uma página.
+                </pre>
+                <h5>Elementos adicionais</h5>
+                <pre>
+                    &lt;script>: Esta tag é usada para inserir código JavaScript em uma página.
+                    &lt;style>: Esta tag é usada para inserir código CSS em uma página.
+                    &lt;meta>: Esta tag é usada para inserir metadados em uma página.
+                    &lt;link>: Esta tag é usada para inserir links para recursos externos em uma página.
+                </pre>
+                <hr>
+                <div style="text-align:center;">
+                    <p>
+                        <small>
+                            Links:
+                            <br>
+                            Guia de referência HTML - mozilla:
+                            <a href="https://developer.mozilla.org/" target="_blank">
+                                <u>https://developer.mozilla.org/</u>
+                            </a>
+                            <br>
+                            Guia de referência HTML - W3C:
+                            <a href="https://www.w3schools.com/html/default.asp">
+                            <u>https://www.w3schools.com/html/default.asp</u></a>
+                            <br>
+                            Curso HTML - Digital Inovation One
+                            <a href="https://web.dio.me/track/formacao-html-web-developer">
+                            <u>https://web.dio.me/track/formacao-html-web-developer</u></a>
+                        </small>
+                    </p>
+                </div>
+</body>
+</html>
