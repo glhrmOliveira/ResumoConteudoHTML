@@ -1,2 +1,2 @@
 # ResumoConteudoHTML
- Resumo das Aulas e Tags apreendidas até aqui - Módulo1 HTML - DIO
+ Resumo das Aulas e Tags aprendidas até aqui - Módulo1 HTML - DIO
